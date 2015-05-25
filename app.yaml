@@ -1,0 +1,11 @@
+application: mzalendo-907
+version: 1
+runtime: go
+api_version: go1
+
+inbound_services:
+- warmup
+
+handlers:
+- url: /.*
+  script: _go_app
